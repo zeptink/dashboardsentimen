@@ -295,9 +295,12 @@ with st.sidebar:
     )
 
     st.divider()
-    st.subheader("Konfigurasi mBERT")
+    st.subheader("Konfigurasasdasdasdi mBERT")
 
-    default_model_path = os.getenv("MODEL_PATH", "model_mbert")
+    default_model_path = os.getenv(
+    "MODEL_PATH",
+    "zptnk/mbert-sentimen-saham")
+    
     model_path = st.text_input(
         "Folder atau model ID",
         value=default_model_path,
