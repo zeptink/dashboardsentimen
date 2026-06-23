@@ -1,0 +1,10 @@
+﻿created_at,text,sentiment,confidence,ticker
+2026-06-01 09:15:00,"IHSG dibuka menguat, optimisme pasar mulai terlihat.",Positif,0.9471,IHSG
+2026-06-01 11:40:00,Investor masih menunggu data ekonomi sebelum mengambil posisi.,Netral,0.8824,IHSG
+2026-06-02 10:20:00,Tekanan jual cukup besar dan pasar kembali melemah.,Negatif,0.9312,IHSG
+2026-06-02 13:05:00,"Laporan kinerja emiten ini cukup bagus, prospeknya menarik.",Positif,0.9043,BBCA
+2026-06-03 09:50:00,Harga saham bergerak mendatar dengan volume yang belum besar.,Netral,0.8615,TLKM
+2026-06-03 14:30:00,Sentimen global membuat pelaku pasar cenderung berhati-hati.,Negatif,0.8976,IHSG
+2026-06-04 10:10:00,Dividen yang dibagikan tahun ini menjadi katalis positif.,Positif,0.9218,BMRI
+2026-06-04 15:25:00,Belum ada perubahan signifikan pada pergerakan saham hari ini.,Netral,0.8739,ASII
+2026-06-05 09:35:00,Penurunan tajam ini membuat banyak investor khawatir.,Negatif,0.9445,GOTO
