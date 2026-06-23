@@ -295,7 +295,7 @@ with st.sidebar:
     )
 
     st.divider()
-    st.subheader("Konfigurasasdasdasdi mBERT")
+    st.subheader("Konfigurasi mBERT")
 
     default_model_path = os.getenv(
     "MODEL_PATH",
