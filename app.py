@@ -41,9 +41,8 @@ TICKER_COLUMNS = [
 ]
 
 
-# ============================================================
+
 # FUNGSI BANTU
-# ============================================================
 def find_column(df: pd.DataFrame, candidates: list[str]) -> str | None:
     """Mencari nama kolom tanpa membedakan huruf besar dan kecil."""
     lookup = {str(column).strip().lower(): column for column in df.columns}
@@ -263,9 +262,9 @@ def to_csv_bytes(df: pd.DataFrame) -> bytes:
     return df.to_csv(index=False).encode("utf-8-sig")
 
 
-# ============================================================
+
 # HEADER
-# ============================================================
+
 st.title("📊 Dashboard Monitoring Sentimen Komunitas Investor")
 st.caption(
     "Monitoring sentimen positif, netral, dan negatif pada unggahan Platform X "
@@ -273,9 +272,9 @@ st.caption(
 )
 
 
-# ============================================================
+
 # SIDEBAR: SUMBER DATA DAN KONFIGURASI MODEL
-# ============================================================
+
 with st.sidebar:
     st.header("Pengaturan")
 
@@ -340,9 +339,9 @@ with st.sidebar:
     )
 
 
-# ============================================================
+
 # MEMUAT DATA
-# ============================================================
+
 try:
     if uploaded_file is not None:
         raw_bytes = uploaded_file.getvalue()
@@ -366,9 +365,9 @@ if st.session_state.get("source_key") != source_key:
     st.session_state.pop("classified_data", None)
 
 
-# ============================================================
+
 # KLASIFIKASI DATA JIKA LABEL BELUM TERSEDIA
-# ============================================================
+
 needs_prediction = (
     "sentiment" not in data.columns
     or data["sentiment"].isna().all()
@@ -438,17 +437,17 @@ if data.empty:
     st.stop()
 
 
-# ============================================================
+
 # TABS
-# ============================================================
+
 dashboard_tab, prediction_tab, data_tab = st.tabs(
     ["Dashboard", "Prediksi Teks", "Informasi Data"]
 )
 
 
-# ============================================================
+
 # TAB DASHBOARD
-# ============================================================
+
 with dashboard_tab:
     st.subheader("Filter Data")
 
@@ -686,9 +685,9 @@ with dashboard_tab:
     )
 
 
-# ============================================================
+
 # TAB PREDIKSI TEKS
-# ============================================================
+
 with prediction_tab:
     st.subheader("Prediksi Satu Teks")
     st.write(
@@ -724,9 +723,9 @@ with prediction_tab:
                 st.exception(exc)
 
 
-# ============================================================
+
 # TAB INFORMASI DATA
-# ============================================================
+
 with data_tab:
     st.subheader("Informasi Dataset")
 
