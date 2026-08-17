@@ -17,7 +17,6 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 # ============================================================
 st.set_page_config(
     page_title="Monitoring Sentimen Investor",
-    page_icon="",
     layout="wide",
 )
 
