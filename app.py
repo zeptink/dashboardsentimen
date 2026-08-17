@@ -17,14 +17,14 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 # ============================================================
 st.set_page_config(
     page_title="Monitoring Sentimen Investor",
-    page_icon="📊",
+    page_icon="",
     layout="wide",
 )
 
 SENTIMENT_ORDER = ["Positif", "Netral", "Negatif"]
 TEXT_COLUMNS = [
     "text", "tweet", "full_text", "content", "post", "posting",
-    "unggahan", "komentar", "teks", "clean_text"
+    "unggahan", "komentar", "teks"
 ]
 DATE_COLUMNS = [
     "created_at", "date", "datetime", "timestamp", "tanggal", "waktu"
