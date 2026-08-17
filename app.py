@@ -24,7 +24,7 @@ st.set_page_config(
 SENTIMENT_ORDER = ["Positif", "Netral", "Negatif"]
 TEXT_COLUMNS = [
     "text", "tweet", "full_text", "content", "post", "posting",
-    "unggahan", "komentar", "teks"
+    "unggahan", "komentar", "teks", "clean_text"
 ]
 DATE_COLUMNS = [
     "created_at", "date", "datetime", "timestamp", "tanggal", "waktu"
